@@ -1,4 +1,4 @@
 module.exports = {
-  dbURI: 'mongodb://localhost/authapp',
+  dbURI: 'mongodb://localhost:27017/authapp',
   secretOrKey: 'secret',
 };
