@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export class Landing extends Component {
   render() {
     return (
-      <div className="container valign-wrapper">
+      <div className="container valign-wrapper" style={{ height: '75vh' }}>
         <div className="row">
           <div className="col s12 center-align">
             <h4>
@@ -13,8 +13,7 @@ export class Landing extends Component {
               scratch
             </h4>
             <p className="flow-text grey-text text-darken-1">
-              Create a (minimal) full-stack app with user authentication via
-              passport and JWTs
+              User authentication via passport and JWTs
             </p>
             <br />
             <div className="col s6">
