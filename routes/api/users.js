@@ -62,7 +62,7 @@ router.post('/login', (req, res) => {
     if (!user)
       return res.status(400).json({ emailnotfound: 'Email not found' });
 
-    bcrypt.compare(password, uer.password).then(isMatch => {
+    bcrypt.compare(password, user.password).then(isMatch => {
       if (isMatch) {
         const payload = {
           id: user.id,
@@ -71,7 +71,7 @@ router.post('/login', (req, res) => {
 
         jwt.sign(
           payload,
-          key.secretOrKey,
+          keys.secretOrKey,
           { expiresIn: 31556926 },
           (err, token) => {
             res.json({ success: true, token: 'Bearer' + token });
