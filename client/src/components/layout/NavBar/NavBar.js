@@ -13,7 +13,7 @@ export class NavBar extends Component {
               className="col s5 brand-logo center black-text"
             >
               <i className="material-icons">code</i>
-              MERN
+              Authapp
             </Link>
           </div>
         </nav>

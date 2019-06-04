@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { loginUser } from '../../actions/authActions';
+import BackButton from '../../components/BackButton';
 
 export class Login extends Component {
   constructor(props) {
@@ -56,9 +57,7 @@ export class Login extends Component {
       <div className="container">
         <div className="row" styel={{ marginTop: '4rem' }}>
           <div className="col s8 offset-s2">
-            <Link to="/" className="btn-flat waves-effect">
-              <i className="material-icons">keyboard_backspace</i> Back to home
-            </Link>
+            <BackButton to="/" iconType="keyboard_backspace" />
             <div className="col s12" style={{ paddingLeft: '11.250px' }}>
               <h4>
                 <b>Login</b> below

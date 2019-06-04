@@ -11,13 +11,15 @@ export class Dashboard extends Component {
 
   render() {
     const { user } = this.props;
+    const userName = user.name.split(' ')[0];
+
     return (
       <div style={{ height: '75vh' }} className="container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
             <h4>
-              Hi, {user.name.split(' ')[0]} welcome to{' '}
-              <span style={{ fontFamily: 'monospace' }}>MERN Authapp</span>
+              Hi, <b>{userName}</b> welcome to{' '}
+              <span style={{ fontFamily: 'monospace' }}>Authapp</span>
             </h4>
             <button
               style={{
